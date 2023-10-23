@@ -1,0 +1,6 @@
+#IDE files
+.idea
+#Scss files
+src/scss/*.scss*
+#Video file
+*video.mp4
