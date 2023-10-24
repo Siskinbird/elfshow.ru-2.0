@@ -3,4 +3,5 @@
 #Scss files
 src/scss/*.scss*
 #Video file
+.mov
 *video.mp4
