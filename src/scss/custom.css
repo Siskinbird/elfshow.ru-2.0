@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap");
 @font-face {
   font-family: "AGU-medium";
   src: url("/assets/fonts/AGUniversityCyr.ttf");
@@ -8,7 +9,20 @@ body, html {
   height: 22000px;
   font-family: "Montserrat", sans-serif;
   color: white;
-  background: linear-gradient(180deg, rgb(131, 71, 166) 33%, rgb(59, 80, 95) 66%, rgb(40, 82, 76) 99%);
+  background: url("../../assets/img/bg.svg"), linear-gradient(180deg, rgb(131, 71, 166) 33%, rgb(59, 80, 95) 66%, rgb(40, 82, 76) 99%);
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+@media (max-width: 480px) {
+  .pt-60 {
+    padding-top: 30px;
+  }
+}
+
+.pt-120 {
+  padding-top: 120px;
 }
 
 .like {
@@ -24,7 +38,6 @@ body, html {
   }
 }
 
-/* Video block */
 .video {
   position: relative;
   padding-bottom: 56.25%;
@@ -71,6 +84,28 @@ body, html {
 .intro__container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.meeting {
+  font-family: "Source Serif 4", serif;
+}
+.meeting h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+@media (max-width: 480px) {
+  .meeting h2 {
+    font-size: 2rem;
+  }
+}
+.meeting h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+@media (max-width: 480px) {
+  .meeting h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
