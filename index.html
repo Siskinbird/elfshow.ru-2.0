@@ -22,6 +22,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--    SWIPER SLIDER CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <!--    Bootstrap & jQuery-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
@@ -42,9 +44,9 @@
 </head>
 <body>
 <header class="header">
-    <nav class="navbar navbar-expand-md navbar-dark like sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark header__filter sticky-top">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="assets/img/tempLogo.svg" alt="logotype"/></a>
+            <a href="#" class="navbar-brand"><img src="assets/img/svg/logo.svg" alt="logotype"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span style="color: aliceblue" class="navbar-toggler-icon"></span>
             </button>
@@ -77,11 +79,71 @@
     <h3 class="text-center pt-60">Это как визитная карточка вашего праздника, после нее гостям станет понятна атмосфера
         и эмоция которой вы хотели наполнить праздник.
     </h3>
+</section>
+<section class="slider container pt-120">
+    <!-- Slider main container -->
+    <div class="swiper col-12">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="slide__wrapper">
+                    <div class="slide__photo"></div>
+                    <div class="slide__video"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
 </section>
 
 
 
+<!--SWIPER SCRIPT-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        fadeEffect: true,
+        loop: true,
+        //slidesPerView: 3,
+        cssMode: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        //Autoplay
+        autoplay: {
+            delay: 5000,
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
 
 </body>
 </html>
