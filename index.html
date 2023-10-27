@@ -122,9 +122,26 @@
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+    </div>
+</section>
+<section class="image-slider pt-60 container">
+    <!-- Slider main container -->
+    <div class="swiper-photo">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide d-flex justify-content-center">
+                <div class="slide__photo d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="assets/img/slider/driada/1.png" alt="Driada">
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 </section>
 
@@ -133,6 +150,22 @@
 <!--SWIPER SCRIPT-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+    const swiperPhoto = new Swiper('.swiper-photo', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
@@ -146,8 +179,6 @@
         pagination: {
             el: '.swiper-pagination',
         },
-        allowSlidePrev: true,
-
 
         // Navigation arrows
         navigation: {
