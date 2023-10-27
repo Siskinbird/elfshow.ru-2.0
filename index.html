@@ -80,14 +80,14 @@
         и эмоция которой вы хотели наполнить праздник.
     </h3>
 </section>
-<section class="slider pt-120">
+<section class="slider pt-120 container">
     <!-- Slider main container -->
     <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide d-flex justify-content-center">
-                <div class="slide__video">
+                <div class="slide__video img-fluid">
                     <iframe src="https://vk.com/video_ext.php?oid=-211977614&id=456239029&hd=2" width="396" height="757"
                             allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0"
                             allowfullscreen></iframe>
@@ -136,30 +136,42 @@
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
-        fadeEffect: true,
+        // fadeEffect: true,
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
+        spaceBetween: 20,
         // cssMode: true,
 
         // If we need pagination
-        // pagination: {
-        //     el: '.swiper-pagination',
-        // },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        allowSlidePrev: true,
+
 
         // Navigation arrows
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         //Autoplay
         // autoplay: {
         //     delay: 5000,
         // },
+        breakpoints: {
+            // 991: {
+            //     spaceBetween: 20
+            // },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+        },
 
         // And if we need scrollbar
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        // },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
     });
 </script>
 
