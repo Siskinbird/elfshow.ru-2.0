@@ -80,7 +80,7 @@
         и эмоция которой вы хотели наполнить праздник.
     </h3>
 </section>
-<section class="slider pt-120 container">
+<section class="slider container pt-120">
     <!-- Slider main container -->
     <div class="swiper">
         <!-- Additional required wrapper -->
@@ -124,7 +124,7 @@
         <div class="swiper-button-next"></div>
     </div>
 </section>
-<section class="image-slider pt-60 container">
+<section class="image-slider container">
     <!-- Slider main container -->
     <div class="swiper-photo">
         <!-- Additional required wrapper -->
@@ -135,6 +135,7 @@
                     <img class="img-fluid" src="assets/img/slider/driada/1.png" alt="Driada">
                 </div>
             </div>
+
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -155,8 +156,10 @@
         direction: 'horizontal',
         loop: true,
         slidesPerView: 1,
+        spaceBetween: 10,
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
 
         // Navigation arrows
@@ -172,12 +175,13 @@
         // fadeEffect: true,
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 20,
-        // cssMode: true,
+        spaceBetween: 8,
+         cssMode: true,
 
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
 
         // Navigation arrows
@@ -190,13 +194,15 @@
         //     delay: 5000,
         // },
         breakpoints: {
-            // 991: {
-            //     spaceBetween: 20
-            // },
-            991: {
+            768: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 18,
             },
+            1140: {
+                slidesPerView: 3,
+                spaceBetween: 18,
+            },
+
         },
 
         // And if we need scrollbar
