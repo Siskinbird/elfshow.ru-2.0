@@ -107,8 +107,9 @@
 }
 body, html {
   width: 100%;
-  height: 22000px;
-  font-family: "Montserrat", sans-serif;
+  height: auto;
+  font-family: "Source Serif 4", serif;
+  font-weight: 300;
   color: white;
   background: url("../../assets/img/bg.svg"), linear-gradient(180deg, rgb(131, 71, 166) 33%, rgb(59, 80, 95) 66%, rgb(40, 82, 76) 99%);
   background-position: 50% 50%;
@@ -239,6 +240,11 @@ body, html {
   background: url("../../assets/img/svg/separator.svg") 50%/contain no-repeat;
 }
 
+.star {
+  height: 45px;
+  background: url("../../assets/img/svg/star.svg") 50%/contain no-repeat;
+}
+
 .slide__photo__elf {
   overflow-x: hidden;
   max-width: 348px;
@@ -259,6 +265,7 @@ body, html {
   margin-bottom: 25px;
   padding: 8px;
   gap: 14px;
+  cursor: pointer;
 }
 @media (max-width: 979px) {
   .more, .price {
@@ -283,6 +290,22 @@ body, html {
   .buttons {
     flex-direction: column;
   }
+}
+
+.drop-down {
+  display: none;
+  transition: 0.9s ease-in-out;
+  opacity: 0;
+}
+
+.open-drop {
+  display: block;
+  transition: 0.9s ease-in-out;
+  opacity: 1;
+}
+
+.paragraph {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -29,6 +29,7 @@
 
 
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -269,7 +270,7 @@
         искусством, ожившим на мероприятии</h3>
 </section>
 <!-----------------------------------------------BUTTONS BLOCK------------------------------------------------------>
-<section class="buttons d-flex align-items-center justify-content-around mt-60 container">
+<section class="buttons d-flex align-items-center justify-content-between mt-60 container">
     <button class="price">рассчитать стоимость</button>
     <button class="more">узнать подробнее</button>
 </section>
@@ -319,21 +320,41 @@
 
 <!-----------------------------------------------BUTTONS BLOCK------------------------------------------------------>
 
-<section class="buttons d-flex align-items-center justify-content-around mt-60 container">
+<section class="buttons d-flex align-items-center justify-content-between mt-60 container">
     <button class="price">рассчитать стоимость</button>
-    <button class="more">узнать подробнее</button>
+    <button id="more" class="more" onclick="dropToggle()">узнать подробнее</button>
 </section>
-<div class="separator container mt-60"></div>
+<section class="drop-down container">
+    <h2 class="title text-uppercase pt-60">Трио эльфы</h2>
+    <p class="paragraph pt-60">Динамичная, новая программа на стрипах! Эльфы показывают себя во всей красе, с около цирковым
+        реквизитом, часть из которого сделана вручную автором проекта. Костюмы с точечным освещением, и в авторской
+        хореографии от Тамары Поповой(танцы на ТНТ) ! Вы увидите нескольких направлений, контемпорари, балет, вог,
+        локинг.</p>
+</section>
+<div class="star container mt-60"></div>
 
 
 <!--SWIPER SCRIPT-->
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+
+    /**FUNCTION DROP DOWN*/
+
+    function dropToggle() {
+    let drop = document.querySelector('.drop-down');
+    if (drop.classList.contains('open-drop')) {
+        drop.classList.remove('open-drop');
+    } else {
+        drop.classList.add('open-drop');
+    }
+}
+
 
 /** ELF'S IMAGE SLIDER */
 
     const swiperPhotoElfs = new Swiper('.swiper-photo__elfs', {
-        // Optional parameters
+
     direction: 'horizontal',
     slidesPerView: 3,
     spaceBetween: 18,
