@@ -138,6 +138,10 @@ body, html {
     padding-top: 24px;
   }
 }
+.mt-60 {
+  margin-top: 60px;
+}
+
 .swiper {
   width: 100%;
   height: auto;
@@ -244,6 +248,13 @@ body, html {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
+}
+
+.more, .price {
+  font-size: 40px;
+  width: 475px;
+  height: 105px;
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=custom.css.map */
