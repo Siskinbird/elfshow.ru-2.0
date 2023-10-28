@@ -197,39 +197,40 @@ body, html {
   list-style-position: inside;
 }
 
-.driada {
+.driada, .elf, .programs {
   font-family: "Source Serif 4", serif;
+  font-weight: 300;
 }
 
-.driada h2 {
+.title {
   margin-bottom: 0;
   font-size: 4rem;
   font-weight: 300;
 }
 
 @media (max-width: 768px) {
-  .driada h2 {
+  .title {
     font-size: 2rem;
   }
 }
 @media (max-width: 350px) {
-  .driada h2 {
+  .title {
     font-size: 1.5rem;
   }
 }
-.driada h3 {
+.subtitle {
   margin-bottom: 0;
   font-size: 3rem;
   font-weight: 300;
 }
 
 @media (max-width: 768px) {
-  .driada h3 {
+  .subtitle {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 350px) {
-  .driada h3 {
+  .subtitle {
     font-size: 1rem;
   }
 }
