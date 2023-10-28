@@ -143,6 +143,10 @@ body, html {
   margin-top: 60px;
 }
 
+.mt-120 {
+  margin-top: 120px;
+}
+
 .swiper {
   width: 100%;
   height: auto;
@@ -241,7 +245,7 @@ body, html {
 }
 
 .star {
-  height: 45px;
+  height: 60px;
   background: url("../../assets/img/svg/star.svg") 50%/contain no-repeat;
 }
 
@@ -292,7 +296,7 @@ body, html {
   }
 }
 
-.drop-down {
+.drop-down, .drop-down__duo, .drop-down__driada {
   display: none;
   transition: 0.9s ease-in-out;
   opacity: 0;
@@ -306,6 +310,12 @@ body, html {
 
 .paragraph {
   font-size: 1.5rem;
+}
+
+.youtube iframe {
+  border-radius: 24px;
+  width: 100%;
+  height: 600px;
 }
 
 /*# sourceMappingURL=custom.css.map */
