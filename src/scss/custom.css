@@ -245,15 +245,15 @@ body, html {
   border-radius: 12px;
 }
 
-.swiper-photo__elfs {
+.swiper-photo__elfs, .swiper-photo {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
 }
 
 .more, .price {
-  font-size: 40px;
-  min-width: 300px;
+  font-size: 34px;
+  width: 410px;
   height: auto;
   border-radius: 12px;
   margin-bottom: 25px;
@@ -263,6 +263,7 @@ body, html {
 @media (max-width: 979px) {
   .more, .price {
     font-size: 24px;
+    width: 300px;
   }
 }
 @media (max-width: 768px) {
@@ -274,6 +275,7 @@ body, html {
 @media (max-width: 350px) {
   .more, .price {
     font-size: 20px;
+    width: 120px;
   }
 }
 
