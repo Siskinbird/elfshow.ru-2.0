@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap");
 @font-face {
@@ -9,6 +10,7 @@
   padding-bottom: 56.25%;
   z-index: 1;
 }
+
 .video__media {
   width: 100%;
   height: auto;
@@ -22,12 +24,12 @@
   font-size: 5rem;
   font-family: "AGU-medium", cursive;
 }
+
 @media (max-width: 480px) {
   .main__title {
     font-size: 2.5rem;
   }
 }
-
 .intro {
   max-height: 70vh;
   overflow: hidden;
@@ -35,6 +37,7 @@
   background: url("../../assets/img/elf_cover_video.webp") center no-repeat;
   background-size: cover;
 }
+
 .intro__content {
   display: flex;
   flex-direction: column;
@@ -47,6 +50,7 @@
   width: 100%;
   height: 100%;
 }
+
 .intro__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -55,11 +59,13 @@
 .meeting {
   font-family: "Source Serif 4", serif;
 }
+
 .meeting h2 {
   margin-bottom: 0;
   font-size: 4rem;
   font-weight: 300;
 }
+
 @media (max-width: 768px) {
   .meeting h2 {
     font-size: 2rem;
@@ -75,6 +81,7 @@
   font-size: 3rem;
   font-weight: 300;
 }
+
 @media (max-width: 768px) {
   .meeting h3 {
     font-size: 1.5rem;
@@ -85,7 +92,6 @@
     font-size: 1rem;
   }
 }
-
 .header__filter {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -93,12 +99,12 @@
 .navbar-brand img {
   width: 75px;
 }
+
 @media (max-width: 480px) {
   .navbar-brand img {
     width: 60px;
   }
 }
-
 body, html {
   width: 100%;
   height: 22000px;
@@ -112,6 +118,7 @@ body, html {
 .pt-60 {
   padding-top: 60px;
 }
+
 @media (max-width: 480px) {
   .pt-60 {
     padding-top: 30px;
@@ -122,16 +129,15 @@ body, html {
     padding-top: 18px;
   }
 }
-
 .pt-120 {
   padding-top: 120px;
 }
+
 @media (max-width: 350px) {
   .pt-120 {
     padding-top: 24px;
   }
 }
-
 .swiper {
   width: 100%;
   height: auto;
@@ -145,6 +151,7 @@ body, html {
   border-radius: 24px;
   width: 100%;
 }
+
 @media (max-width: 768px) {
   .slide__photo img {
     width: 100%;
@@ -156,13 +163,13 @@ body, html {
   border-radius: 24px;
   margin-bottom: 120px;
 }
+
 @media (max-width: 350px) {
   .slide__video iframe {
     width: 100%;
     height: 550px;
   }
 }
-
 .swiper-button-next, .swiper-button-prev {
   display: none;
 }
@@ -170,16 +177,73 @@ body, html {
 .swiper-pagination {
   top: 780px !important;
 }
+
 @media (max-width: 350px) {
   .swiper-pagination {
     top: 555px !important;
   }
 }
-
 @media (max-width: 979px) {
   .image-slider {
     margin-top: -60px;
   }
+}
+/** ПЕРЕНЕСТИ В ОСНОВНОЙ ФАЙЛ */
+.driada-list__item {
+  list-style-position: inside;
+}
+
+.driada {
+  font-family: "Source Serif 4", serif;
+}
+
+.driada h2 {
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .driada h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 350px) {
+  .driada h2 {
+    font-size: 1.5rem;
+  }
+}
+.driada h3 {
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .driada h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .driada h3 {
+    font-size: 1rem;
+  }
+}
+.separator {
+  height: 80px;
+  background: url("../../assets/img/svg/separator.svg") 50%/contain no-repeat;
+}
+
+.slide__photo__elf {
+  overflow-x: hidden;
+  max-width: 348px;
+  border-radius: 12px;
+}
+
+.swiper-photo__elfs {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=custom.css.map */
