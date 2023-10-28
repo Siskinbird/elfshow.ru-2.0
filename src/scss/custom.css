@@ -252,9 +252,34 @@ body, html {
 
 .more, .price {
   font-size: 40px;
-  width: 475px;
-  height: 105px;
+  min-width: 300px;
+  height: auto;
   border-radius: 12px;
+  margin-bottom: 25px;
+  padding: 8px;
+  gap: 14px;
+}
+@media (max-width: 979px) {
+  .more, .price {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .more, .price {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .more, .price {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
