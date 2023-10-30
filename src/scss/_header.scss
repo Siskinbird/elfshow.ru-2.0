@@ -1,0 +1,15 @@
+//============================//
+//===========HEADER==========//
+//==========================//
+
+.header {
+  &__filter{
+    background-color: rgba(0,0,0, 0.5);
+  }
+}
+.navbar-brand img {
+  width: 75px;
+  @include _480 {
+    width: 60px;
+  }
+}

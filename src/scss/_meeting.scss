@@ -1,0 +1,30 @@
+@import 'media';
+//=====================================//
+//------------MEETING SECTION----------//
+//=====================================//
+
+.meeting {
+  font-family: 'Source Serif 4', serif;
+  h2 {
+    margin-bottom: 0;
+    font-size: 4rem;
+    font-weight: 300;
+    @include _768 {
+      font-size: 2rem;
+    }
+    @include _350{
+      font-size: 1.5rem;
+    }
+  }
+  h3 {
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-weight: 300;
+    @include _768 {
+      font-size: 1.5rem;
+    }
+    @include _350{
+      font-size: 1.0rem;
+    }
+  }
+}
