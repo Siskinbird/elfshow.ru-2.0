@@ -120,6 +120,9 @@ body, html {
   height: 60px;
   background: url("../../assets/img/svg/star.svg")  50%/contain no-repeat;
   animation: 3s linear infinite rotate;
+  @include _480 {
+    height: 45px;
+  }
 }
 /** АНИМАЦИЯ ВРАЩЕНИЯ ЗВЕЗДЫ */
 

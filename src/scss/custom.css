@@ -305,6 +305,11 @@ body, html {
   background: url("../../assets/img/svg/star.svg") 50%/contain no-repeat;
   animation: 3s linear infinite rotate;
 }
+@media (max-width: 480px) {
+  .star {
+    height: 45px;
+  }
+}
 
 /** АНИМАЦИЯ ВРАЩЕНИЯ ЗВЕЗДЫ */
 @keyframes rotate {
