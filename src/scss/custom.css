@@ -250,6 +250,10 @@ body, html {
   }
 }
 
+.swiper-button-next, .swiper-button-prev {
+  display: none;
+}
+
 .swiper-pagination {
   display: block;
   position: relative;
