@@ -471,10 +471,6 @@
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination py-2 my-2"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 </section>
 <!-----------------------------------------------BUTTONS BLOCK------------------------------------------------------>
@@ -578,6 +574,9 @@
             el: '.swiper-pagination',
             clickable: true,
         },
+    autoplay: {
+            delay: 5000,
+    },
 
         // Navigation arrows
         // navigation: {
@@ -596,7 +595,6 @@
         loop: true,
         slidesPerView: 1,
         spaceBetween: 8,
-        cssMode: true,
 
         // If we need pagination
         pagination: {
@@ -622,9 +620,7 @@
                 slidesPerView: 3,
                 spaceBetween: 18,
             },
-
         },
-
         // And if we need scrollbar
         scrollbar: {
             el: '.swiper-scrollbar',
