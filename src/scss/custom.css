@@ -250,23 +250,9 @@ body, html {
   }
 }
 
-.swiper-button-next, .swiper-button-prev {
-  display: none;
-}
-
 .swiper-pagination {
-  top: 780px !important;
-}
-@media (max-width: 350px) {
-  .swiper-pagination {
-    top: 555px !important;
-  }
-}
-
-@media (max-width: 979px) {
-  .image-slider {
-    margin-top: -60px;
-  }
+  display: block;
+  position: relative;
 }
 
 /** ПЕРЕНЕСТИ В ОСНОВНОЙ ФАЙЛ */
@@ -320,7 +306,7 @@ body, html {
 }
 @media (max-width: 480px) {
   .star {
-    height: 45px;
+    height: 30px;
   }
 }
 

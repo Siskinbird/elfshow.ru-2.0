@@ -58,20 +58,18 @@ body, html {
   }
 }
 
-.swiper-button-next, .swiper-button-prev {
-  display: none;
-}
+//.swiper-button-next, .swiper-button-prev {
+//  display: none;
+//}
 .swiper-pagination {
-    top: 780px !important;
-  @include _350 {
-    top: 555px !important;
-  }
+  display: block;
+  position: relative;
 }
-.image-slider {
-  @include _979 {
-    margin-top: -60px;
-  }
-}
+//.image-slider {
+//  @include _979 {
+//    margin-top: -60px;
+//  }
+//}
 /** ПЕРЕНЕСТИ В ОСНОВНОЙ ФАЙЛ */
 
 
@@ -121,7 +119,7 @@ body, html {
   background: url("../../assets/img/svg/star.svg")  50%/contain no-repeat;
   animation: 3s linear infinite rotate;
   @include _480 {
-    height: 45px;
+    height: 30px;
   }
 }
 /** АНИМАЦИЯ ВРАЩЕНИЯ ЗВЕЗДЫ */
