@@ -110,33 +110,6 @@ body, html {
   background-repeat: repeat-y;
 }
 
-.pt-60 {
-  padding-top: 60px;
-}
-@media (max-width: 480px) {
-  .pt-60 {
-    padding-top: 30px;
-  }
-}
-@media (max-width: 350px) {
-  .pt-60 {
-    padding-top: 18px;
-  }
-}
-
-.pt-120 {
-  padding-top: 120px;
-}
-@media (max-width: 350px) {
-  .pt-120 {
-    padding-top: 24px;
-  }
-}
-
-.pb-120 {
-  padding-bottom: 120px;
-}
-
 .mt-60 {
   margin-top: 60px;
 }
@@ -171,7 +144,6 @@ body, html {
   max-width: 100%;
   max-height: 100%;
   border-radius: 24px;
-  margin-bottom: 120px;
 }
 @media (max-width: 350px) {
   .slide__video iframe {
@@ -268,7 +240,6 @@ body, html {
   width: 410px;
   height: auto;
   border-radius: 12px;
-  margin-bottom: 25px;
   padding: 8px;
   gap: 14px;
   cursor: pointer;
