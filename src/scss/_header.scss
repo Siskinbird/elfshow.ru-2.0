@@ -9,6 +9,13 @@
   }
   .nav-link {
     color: white !important;
+    transition: .3s ease-in-out;
+    &:hover {
+      //-webkit-box-shadow: 4px 4px 8px 0px rgba(212, 182, 247, 0.2);
+      //-moz-box-shadow: 4px 4px 8px 0px rgba(212, 182, 247, 0.2);
+      //box-shadow: 4px 4px 8px 0px rgba(212, 182, 247, 0.2);
+      scale: 102%;
+    }
   }
 }
 .navbar-brand img {
