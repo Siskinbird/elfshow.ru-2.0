@@ -1,10 +1,14 @@
+@import "media";
 //============================//
 //===========HEADER==========//
 //==========================//
 
 .header {
   &__filter{
-    background-color: rgba(0,0,0, 0.5);
+    background-color: #292929;
+  }
+  .nav-link {
+    color: white !important;
   }
 }
 .navbar-brand img {
