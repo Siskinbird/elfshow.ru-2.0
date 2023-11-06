@@ -29,6 +29,13 @@ body, html {
 //===========SWIPER==========//
 //==========================//
 
+p {
+  font-size: 48px;
+
+}
+.grayOut {
+background-color: rgb(41, 41, 41, 50%);
+}
 .swiper {
   width: 100%;
   height: auto;
@@ -65,13 +72,11 @@ body, html {
   display: block;
   position: relative;
 }
-//.image-slider {
-//  @include _979 {
-//    margin-top: -60px;
-//  }
-//}
-/** ПЕРЕНЕСТИ В ОСНОВНОЙ ФАЙЛ */
 
+/** ПЕРЕНЕСТИ В ОСНОВНОЙ ФАЙЛ */
+.services-description {
+  background-color: rgb(41,41,41,50%);
+}
 
 .driada, .elf, .programs {
   font-family: "Source Serif 4", serif;
@@ -115,9 +120,9 @@ body, html {
 
 /** ЗВЕЗДА */
 .star {
-  height: 60px;
+  max-width: 110px;
   background: url("../../assets/img/svg/star.svg")  50%/contain no-repeat;
-  animation: 3s linear infinite rotate;
+  //animation: 3s linear infinite rotate;
   @include _480 {
     height: 30px;
   }
@@ -172,4 +177,69 @@ body, html {
   height: 600px;
 }
 
+//Карточка услуги\программы
+.services-title{
+  width: 100%;
+  //height: 136px;
+  padding: 30px;
+  margin: 60px auto -60px;
+  background-color: #292929;
+  //font-size:50px;
+  font-family: "Source Serif 4", serif;
+  @include _979{
+    .services-title {
+      font-size: 42px;
+    }
+  }
+  @include _768 {
+    .services-title {
+      font-size: 24px;
+    }
+  }
+}
+.services-description {
+  font-family: "Source Serif 4", serif;
+  margin-top: 60px;
+padding-bottom: 30px;
+  padding-top: 30px;
+  @include _1170 {
+    margin-top: -37px;
+  }
+  @include _979{
+    .services-title {
+      font-size: 42px;
+    }
+  }
+  @include _768 {
+    .services-title {
+      font-size: 24px;
+    }
+  }
+}
+.test {
+  height: 143px;
+  width: 152px;
+  margin-top: -72px;
+  rotate: -15deg;
+  left: 4%;
+  bottom: -9%;
+  p {
+    margin-left: 30px;
+    @include _979 {
+      .services-title {
+        font-size: 36px;
+      }
+    }
+    @include _768 {
+      .services-title {
+        font-size: 24px;
+      }
+    }
+  }
+}
 
+
+
+//.services-description {
+//  margin-top: -200px;
+//}
