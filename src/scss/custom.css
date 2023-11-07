@@ -265,6 +265,50 @@ p {
   }
 }
 
+.re-star {
+  position: relative;
+  left: 4%;
+  margin-bottom: -118px;
+  rotate: 15deg;
+  max-width: 118px;
+  height: 118px;
+  background: url("../../assets/img/svg/star.svg") 50%/contain no-repeat;
+}
+@media (max-width: 1170px) {
+  .re-star {
+    max-width: 90px;
+    height: 90px;
+    margin-bottom: -90px;
+  }
+}
+@media (max-width: 979px) {
+  .re-star {
+    max-width: 65px;
+    height: 65px;
+    margin-bottom: -65px;
+  }
+}
+.re-title {
+  font-size: 42px;
+}
+
+.re-subtitle {
+  font-size: 40px;
+}
+@media (max-width: 1170px) {
+  .re-subtitle {
+    margin-top: 46px;
+    font-weight: 200;
+  }
+}
+@media (max-width: 979px) {
+  .re-subtitle {
+    margin-top: 46px;
+    font-size: 42px;
+    font-weight: 200;
+  }
+}
+
 /** АНИМАЦИЯ ВРАЩЕНИЯ ЗВЕЗДЫ */
 @keyframes rotate {
   from {
@@ -309,14 +353,14 @@ p {
 }
 
 .services-title {
-  width: 100%;
+  max-width: 100%;
   padding: 30px;
-  margin: 60px auto -60px;
+  margin: 0 auto -5%;
   background-color: #292929;
   font-family: "Source Serif 4", serif;
 }
-@media (max-width: 979px) {
-  .services-title .services-title {
+@media (max-width: 1170px) {
+  .services-title {
     font-size: 42px;
   }
 }

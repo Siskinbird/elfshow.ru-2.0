@@ -127,6 +127,43 @@ background-color: rgb(41, 41, 41, 50%);
     height: 30px;
   }
 }
+.re-star {
+  position: relative;
+  left: 4%;
+  margin-bottom: -118px;
+  rotate: 15deg;
+  max-width: 118px;
+  height: 118px;
+  background: url("../../assets/img/svg/star.svg")  50%/contain no-repeat;
+  @include _1170 {
+    max-width: 90px;
+    height: 90px;
+    margin-bottom: -90px;
+  }
+  @include _979 {
+    max-width: 65px;
+    height: 65px;
+    margin-bottom: -65px;
+  }
+  @include _480 {
+    //max-width: 90px;
+  }
+}
+.re-title {
+  font-size: 42px;
+}
+.re-subtitle {
+  font-size: 40px;
+  @include _1170{
+    margin-top: 46px;
+    font-weight: 200;
+  }
+  @include _979 {
+    margin-top: 46px;
+    font-size: 42px;
+    font-weight: 200;
+  }
+}
 /** АНИМАЦИЯ ВРАЩЕНИЯ ЗВЕЗДЫ */
 
 @keyframes rotate {
@@ -179,17 +216,28 @@ background-color: rgb(41, 41, 41, 50%);
 
 //Карточка услуги\программы
 .services-title{
-  width: 100%;
+  max-width: 100%;
   //height: 136px;
   padding: 30px;
-  margin: 60px auto -60px;
+  margin: 0 auto -5%;
+  //margin: 60px auto -60px;
   background-color: #292929;
   //font-size:50px;
   font-family: "Source Serif 4", serif;
-  @include _979{
-    .services-title {
+
+  //&::before {
+  //  content: url("../../assets/img/svg/star.svg");
+  //  position: relative;
+  //  width: 9%;
+  //  scale: 120%;
+  //  top: 68px;
+  //  /* left: 10px; */
+  //  height: auto;
+  //  rotate: 15deg;
+  //}
+
+  @include _1170{
       font-size: 42px;
-    }
   }
   @include _768 {
     .services-title {
