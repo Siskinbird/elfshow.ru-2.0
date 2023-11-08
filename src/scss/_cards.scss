@@ -12,15 +12,27 @@
   min-height: 150px;
   border: 3px solid #D9D9D9;
   gap: 10px;
-  padding: 25px;
 }
-.card-item {
-  border: 1px solid #D9D9D9;
-  height: auto;
+//.card-item {
+//  border: 1px solid #D9D9D9;
+//  min-height: 100%;
+//}
+.card-artist {
+  p{
+    line-height: 38px;
+
+  }
+
 }
+
 .card-price {
-  min-height: 90%;
+  border: 1px solid #D9D9D9;
+
+  height: 100%;
+  //min-height: 90%;
   p {
+    line-height: 48px;
+    height: 100%;
     font-size: 1rem;
     @include _350 {
       font-size: 1.25rem;
