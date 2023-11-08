@@ -11,13 +11,14 @@
 //==========================//
 @import "buttons";
 @import "videoBack";
+@import "cards";
 @import "meeting";
 @import "header";
 //==========================//
 
 body, html {
   width: 100%;
-  height: 22000px;
+  min-height: 100%;
   font-family: "Source Serif 4", serif;
   font-weight: 300;
   //font-family: "Montserrat", sans-serif;
@@ -86,9 +87,11 @@ background-color: rgb(41, 41, 41, 50%);
 
 .main__title {
   font-size: 1.75rem;
-
+  @include _350{
+    font-size: 3rem;
+  }
   @include _768 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   @include _979 {
     font-size: 3.5rem;
@@ -179,10 +182,10 @@ background-color: rgb(41, 41, 41, 50%);
   font-size: 1.25rem;
 
   @include _350 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   @include _768 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   //@include _1170{
@@ -254,6 +257,9 @@ background-color: rgb(41, 41, 41, 50%);
   font-weight: 300;
   @include _350 {
     font-size: 1.5rem;
+  }
+  @include _768 {
+    font-size: 2.5rem;
   }
   @include _1170 {
     font-size: 3.0rem;
