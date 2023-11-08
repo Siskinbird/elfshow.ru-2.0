@@ -6,13 +6,10 @@
 /** БАЗОВАЯ КНОПКА */
 .more, .price {
   font-family: 'Inter', sans-serif;
-  font-size: 34px;
   background: #2c2e3e;
   color: white;
-  width: 410px;
-  height: auto;
-  border-radius: 12px;
-  //margin-bottom: 25px;
+  min-width: 300px;
+  border-radius: 6px;
   padding: 8px;
   gap: 14px;
   cursor: pointer;
@@ -22,19 +19,21 @@
     color: snow;
     scale: 102%;
   }
-  @include _979 {
-    font-size: 24px;
-    width: 300px;
-  }
-  @include _768 {
-    font-size: 20px;
-    width: 100%;
-
-  }
   @include _350 {
-
-    font-size: 20px;
+    font-size: 1.25rem;
+    width: 100%;
   }
+
+  @include _979 {
+    font-size: 2.25rem;
+    //width: 50%;
+  }
+  @include _1170 {
+    font-size: 2.5rem;
+    //width: 475px;
+
+  }
+
 }
 
 //.custom-btn {
@@ -54,9 +53,16 @@
 
 
 .buttons, .custom-btn {
-  @include _768 {
-    flex-direction: column;
-  }
+  max-width: 96%;
+  margin: 0 auto;
+  //flex-direction: column;
+//@include _320 {
+//  max-width: 320px;
+//}
+//  @include _768 {
+//    flex-direction: row;
+//
+//  }
 }
 
 
