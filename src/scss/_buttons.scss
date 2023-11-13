@@ -25,14 +25,14 @@
   }
 
   @include _979 {
-    font-size: 2.25rem;
+    font-size: 2.00rem;
     //width: 50%;
   }
-  @include _1170 {
-    font-size: 2.5rem;
-    //width: 475px;
-
-  }
+  //@include _1170 {
+  //  font-size: 2.5rem;
+  //  //width: 475px;
+  //
+  //}
 
 }
 

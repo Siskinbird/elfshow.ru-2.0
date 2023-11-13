@@ -1,12 +1,24 @@
 @import "media";
 
 .card-custom {
+  position: relative;
   margin-top: 120px;
   margin-bottom: 120px;
   max-width: 100%;
   margin-left: 15px;
   background-color: inherit;
   margin-right: 15px;
+
+  img {
+    position: absolute;
+    left: 29%;
+    @include _768 {
+      width: 38%;
+    }
+    @include _480 {
+      width: 43%;
+    }
+  }
 }
 .card-body {
   min-height: 150px;
@@ -18,25 +30,42 @@
 //  min-height: 100%;
 //}
 .card-artist {
+  min-width: 32.3%;
+  padding-top: 20px;
+  height: 130px;
+  border: 1px solid #D9D9D9;
   p{
     line-height: 38px;
-  }
-
-}
-
-.card-price {
-  border: 1px solid #D9D9D9;
-  height: 130px;
-  //min-height: 90%;
-  p {
-    line-height: 48px;
-    height: 100%;
-    font-size: 1rem;
     @include _350 {
       font-size: 1.25rem;
     }
     @include _600 {
       font-size: 1.75rem;
+    }
+    @include _979 {
+      font-size: 2rem;
+    }
+  }
+
+}
+
+.card-price {
+  min-width: 66.6%;
+  border: 1px solid #D9D9D9;
+  height: 130px;
+  p {
+    padding-top: 28px;
+    padding-left: 20px;
+    line-height: 48px;
+    height: 100%;
+    font-size: 1rem;
+    @include _350 {
+      font-size: 1.25rem;
+      padding-top: 36px;
+    }
+    @include _600 {
+      font-size: 1.5rem;
+      padding-left: 4px;
     }
     @include _979 {
       font-size: 2rem;
