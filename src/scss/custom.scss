@@ -225,10 +225,28 @@ background-color: rgb(41, 41, 41, 50%);
 }
 
 
-.drop-down, .drop-down__duo, .drop-down__driada {
+.drop-down, .drop-down__duo, .drop-down__driada, .drop-down__solo-elf, .drop-down__trio {
   display: none;
   transition: .9s ease-in-out;
   opacity: 0;
+  p {
+    font-size: 1rem;
+    @include _350 {
+      font-size: 1.25rem;
+    }
+    @include _600 {
+      font-size: 1.5rem;
+    }
+    @include _768 {
+      font-size: 1.75rem;
+    }
+    @include _1170 {
+      font-size: 38px;
+    }
+  }
+  h2 {
+    font-size: 40px;
+  }
 }
 .open-drop {
   display: block;
@@ -237,7 +255,19 @@ background-color: rgb(41, 41, 41, 50%);
 }
 
 .paragraph {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  @include _350 {
+    font-size: 1.25rem;
+  }
+  @include _600 {
+    font-size: 1.5rem;
+  }
+  @include _768 {
+    font-size: 1.75rem;
+  }
+  @include _1170 {
+    font-size: 38px;
+  }
 }
 
 
@@ -317,3 +347,19 @@ background-color: rgb(41, 41, 41, 50%);
 //.services-description {
 //  margin-top: -200px;
 //}
+
+ol {
+  font-size: 1rem;
+  @include _350 {
+    font-size: 1.25rem;
+  }
+  @include _600 {
+    font-size: 1.5rem;
+  }
+  @include _768 {
+    font-size: 1.75rem;
+  }
+  @include _1170 {
+    font-size: 38px;
+  }
+}

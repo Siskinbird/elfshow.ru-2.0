@@ -19,6 +19,10 @@
     }
     @include _480 {
       width: 43%;
+      display: block;
+    }
+    @include _320 {
+      display: none;
     }
   }
 }
@@ -32,13 +36,20 @@
 //  min-height: 100%;
 //}
 .card-artist {
-  min-width: 32.3%;
-  padding-top: 20px;
+  min-width: 30.3%;
+  padding-top: 36px;
   height: 130px;
   border: 1px solid #D9D9D9;
+  @include _480 {
+    min-width: 31.3%;
+  }
+  @include _600 {
+    min-width: 32.3%;
+  }
   p{
-    line-height: 38px;
+    font-size: 1rem;
     @include _350 {
+     // padding-top: 16px;
       font-size: 1.25rem;
     }
     @include _600 {
@@ -46,6 +57,7 @@
     }
     @include _979 {
       font-size: 2rem;
+      line-height: 38px;
     }
   }
 

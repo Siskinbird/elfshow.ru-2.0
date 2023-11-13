@@ -112,6 +112,12 @@
 @media (min-width: 480px) {
   .card-custom img {
     width: 43%;
+    display: block;
+  }
+}
+@media (min-width: 320px) {
+  .card-custom img {
+    display: none;
   }
 }
 
@@ -122,13 +128,23 @@
 }
 
 .card-artist {
-  min-width: 32.3%;
-  padding-top: 20px;
+  min-width: 30.3%;
+  padding-top: 36px;
   height: 130px;
   border: 1px solid #D9D9D9;
 }
+@media (min-width: 480px) {
+  .card-artist {
+    min-width: 31.3%;
+  }
+}
+@media (min-width: 600px) {
+  .card-artist {
+    min-width: 32.3%;
+  }
+}
 .card-artist p {
-  line-height: 38px;
+  font-size: 1rem;
 }
 @media (min-width: 350px) {
   .card-artist p {
@@ -143,6 +159,7 @@
 @media (min-width: 979px) {
   .card-artist p {
     font-size: 2rem;
+    line-height: 38px;
   }
 }
 
@@ -432,10 +449,36 @@ p {
   overflow: hidden;
 }
 
-.drop-down, .drop-down__duo, .drop-down__driada {
+.drop-down, .drop-down__duo, .drop-down__driada, .drop-down__solo-elf, .drop-down__trio {
   display: none;
   transition: 0.9s ease-in-out;
   opacity: 0;
+}
+.drop-down p, .drop-down__duo p, .drop-down__driada p, .drop-down__solo-elf p, .drop-down__trio p {
+  font-size: 1rem;
+}
+@media (min-width: 350px) {
+  .drop-down p, .drop-down__duo p, .drop-down__driada p, .drop-down__solo-elf p, .drop-down__trio p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 600px) {
+  .drop-down p, .drop-down__duo p, .drop-down__driada p, .drop-down__solo-elf p, .drop-down__trio p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .drop-down p, .drop-down__duo p, .drop-down__driada p, .drop-down__solo-elf p, .drop-down__trio p {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1170px) {
+  .drop-down p, .drop-down__duo p, .drop-down__driada p, .drop-down__solo-elf p, .drop-down__trio p {
+    font-size: 38px;
+  }
+}
+.drop-down h2, .drop-down__duo h2, .drop-down__driada h2, .drop-down__solo-elf h2, .drop-down__trio h2 {
+  font-size: 40px;
 }
 
 .open-drop {
@@ -445,7 +488,27 @@ p {
 }
 
 .paragraph {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+@media (min-width: 350px) {
+  .paragraph {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 600px) {
+  .paragraph {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .paragraph {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1170px) {
+  .paragraph {
+    font-size: 38px;
+  }
 }
 
 .youtube iframe {
@@ -513,6 +576,30 @@ p {
 @media (min-width: 768px) {
   .test p .services-title {
     font-size: 24px;
+  }
+}
+
+ol {
+  font-size: 1rem;
+}
+@media (min-width: 350px) {
+  ol {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 600px) {
+  ol {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  ol {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1170px) {
+  ol {
+    font-size: 38px;
   }
 }
 

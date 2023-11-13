@@ -419,6 +419,34 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
+
+
+    <div class="card-custom">
+        <div class="card-body row p-2 d-flex flex-nowrap gap-2 align-items-center">
+            <div class="card-price">
+                <p class="text-left">от 35 000 руб. </p>
+            </div>
+            <img src="assets/img/svg/duet_elfs.svg" alt="Elfs">
+
+
+            <div class="card-artist px-2 text-center text-left align-items-center justify-content-center">
+                <p>3 артиста <br> 6 минут
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons row flex-md-row align-items-center justify-content-between py-2 py-lg-5 py-md-3 container">
+        <button class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <button class="more my-2 col-12 col-md-5" onclick="dropToggleTrio()">узнать подробнее</button>
+    </div>
+    <div class="drop-down__trio container">
+        <h2 class="title text-uppercase py-2 py-lg-5 py-md-3">Трио Эльфы</h2>
+        <p class="paragraph py-2 py-lg-5 py-md-3">В этом номере мы предлагаем вам увидеть не только красоту и изящество эльфийского мира, но и энергию и мощь танца.
+
+            Перед вами динамичная программа, новый инновационный танцевальный номер на стрипах. Музыка авторская, специально созданная для нас, идеально сочетается с нашим Эльфийским шоу. Профессиональные танцоры, которые участвуют в этом шоу, обладают невероятными навыками и талантом. Хореографию для этого шоу создал танцор из "танцев на тнт", что добавляет еще больше уникальности и впечатляющего эффекта.
+            Вы сможете увидеть в данном номере соединение танца, театра и сценических элементов, точечно и со вкусом.</p>
+    </div>
 </section>
 
     <!-----------------------------------YOUTUBE IFRAME THRE ELF VIDEO BLOCK----------------------------------------------->
@@ -705,10 +733,23 @@
     </section>
     <section class="drop-down__driada container">
         <h2 class="title text-uppercase py-2 py-lg-5 py-md-3">СОЛО ДРИАДЫ</h2>
-        <p class="paragraph py-2 py-lg-5 py-md-3">выступление состоит из трех частей
-            танец
-            манипуляция с реквизитом
-            реквизит и танец в яркой экспрессии и взаимодействием с гостей иммерсивная часть.</p>
+        <ol>
+            <p class="paragraph py-2 py-lg-5 py-md-3">Великолепное выступление составлено из трех захватывающих частей:</p>
+
+            <li>Танцевальная симфония, в которой данные движения обволакивают зрителей волнующими ритмами и
+                элегантными фигурами.
+            </li>
+            <br>
+            <li>Умелая игра с реквизитом, превращает сцену в магический мир, где каждый предмет становится главным
+                героем и воплощает уникальную историю.
+            </li>
+            <br>
+            <li>Восхитительное сочетание реквизита и танцевальной экспрессии, окутанное бурлящей энергией, погружает
+                зрителей виммерсивную атмосферу, где каждый из них становится непосредственным участником этого захватывающего
+                путешествия.
+            </li>
+        </ol>
+
     </section>
 </section>
 
@@ -722,7 +763,7 @@
                 <img class="img-fluid" src="assets/img/slider/elf/elfi_2.png" alt="Solo elfi">
             </div>
             <div class="col-6">
-                <img class="img-fluid" src="assets/img/slider/elf/elfi_2.png" alt="Solo elfi">
+                <img class="img-fluid" src="assets/img/slider/elf/elfi_4.png" alt="Solo elfi">
             </div>
         </div>
         <div class="card-custom">
@@ -730,7 +771,7 @@
                 <div class="card-price">
                     <p class="text-left">от 13 000 руб. </p>
                 </div>
-                <img src="assets/img/svg/solo_elfa.svg" alt="Driada solo">
+                <img src="assets/img/svg/solo_elfa.svg" alt="Elfi solo">
 
 
                 <div class="card-artist px-2 text-center text-left align-items-center justify-content-center">
@@ -739,6 +780,16 @@
                 </div>
             </div>
         </div>
+
+        <div class="buttons row flex-md-row align-items-center justify-content-between py-2 py-lg-5 py-md-3 container">
+            <button class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+            <button class="more my-2 col-12 col-md-5" onclick="dropToggleSoloElf()">узнать подробнее</button>
+        </div>
+        <section class="drop-down__solo-elf container">
+            <h2 class="title text-uppercase py-2 py-lg-5 py-md-3">СОЛО ЭЛЬФА</h2>
+            <p class="paragraph py-2 py-lg-5 py-md-3">Выступление состоит из танца плавно вытекающее в театралезованно
+                выступление, небольшое взаимодействие с публикой и рисование телом сюжетов из эльфийских сказок</p>
+        </section>
     </section>
 <!------------------------------------------INTERACTIVE BLOCK--------------------------------------->
     <section class="services my-2 py-2 py-lg-5 py-md-3 text-center">
@@ -766,7 +817,7 @@
     /**FUNCTION DROP DOWN*/
 
     function dropToggleTrio() {
-    let drop = document.querySelector('.drop-down');
+    let drop = document.querySelector('.drop-down__trio');
     if (drop.classList.contains('open-drop')) {
         drop.classList.remove('open-drop');
     } else {
@@ -785,6 +836,14 @@
     
     function dropToggleDriada() {
         let drop = document.querySelector('.drop-down__driada');
+        if (drop.classList.contains('open-drop')) {
+            drop.classList.remove('open-drop');
+        } else {
+            drop.classList.add('open-drop');
+        }
+    }
+    function dropToggleSoloElf() {
+        let drop = document.querySelector('.drop-down__solo-elf');
         if (drop.classList.contains('open-drop')) {
             drop.classList.remove('open-drop');
         } else {
