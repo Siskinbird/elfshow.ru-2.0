@@ -95,6 +95,11 @@
   background-color: inherit;
   margin-right: 15px;
 }
+@media (min-width: 1170px) {
+  .card-custom {
+    margin-top: 200px;
+  }
+}
 .card-custom img {
   position: absolute;
   left: 29%;
