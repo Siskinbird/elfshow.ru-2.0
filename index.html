@@ -342,7 +342,40 @@
     </ul>
     <section class="buttons row flex-md-row align-items-center justify-content-between py-2 py-lg-5 py-md-3 container">
         <!--    <button class="custom-btn btn-6 py-2 my-2 d-flex justify-content-center align-items-center"><span>рассчитать стоимость</span></button>-->
-        <button class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <button id="openModalElfi" class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <div id="myModalElfi" class="modal">
+            <div class="modal-content">
+                <span class="close">&times</span>
+                <div class="container contact-form">
+                    <form method="post">
+                        <h5 class="text-center">Рассчитать стоимость</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Ваше имя *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Введите сообщение *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--                <p>Это модалочка</p>-->
+            </div>
+
+        </div>
         <!--    <button class="custom-btn btn-6 py-2 my-2 d-flex justify-content-center align-items-center"><span>узнать подробнее</span></button>-->
         <button class="more my-2 col-12 col-md-5 my-2">узнать подробнее</button>
     </section>
@@ -437,7 +470,40 @@
     </div>
 
     <div class="buttons row flex-md-row align-items-center justify-content-between py-2 py-lg-5 py-md-3 container">
-        <button class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <button id="openModalTrio" class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <div id="myModalTrio" class="modal">
+            <div class="modal-content">
+                <span class="close">&times</span>
+                <div class="container contact-form">
+                    <form method="post">
+                        <h5 class="text-center">Рассчитать стоимость</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Ваше имя *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Введите сообщение *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--                <p>Это модалочка</p>-->
+            </div>
+
+        </div>
         <button class="more my-2 col-12 col-md-5" onclick="dropToggleTrio()">узнать подробнее</button>
     </div>
     <div class="drop-down__trio container">
@@ -583,8 +649,40 @@
     <!-----------------------------------------------BUTTONS BLOCK------------------------------------------------------>
 
     <div class="buttons row flex-md-row align-items-center justify-content-between py-2 py-lg-5 py-md-3 container">
-        <button class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
-        <button class="more my-2 col-12 col-md-5" onclick="dropToggleDuo()">узнать подробнее</button>
+        <button id="openModalDuo" class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <div id="myModalDuo" class="modal">
+            <div class="modal-content">
+                <span class="close">&times</span>
+                <div class="container contact-form">
+                    <form method="post">
+                        <h5 class="text-center">Рассчитать стоимость</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Ваше имя *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Введите сообщение *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--                <p>Это модалочка</p>-->
+            </div>
+
+        </div>        <button class="more my-2 col-12 col-md-5" onclick="dropToggleDuo()">узнать подробнее</button>
     </div>
     <div class="drop-down__duo container">
         <h2 class="title text-uppercase py-2 py-lg-5 py-md-3">Дуэт сестёр эльфиек</h2>
@@ -728,7 +826,40 @@
     <!-----------------------------------------------BUTTONS BLOCK------------------------------------------------------>
 
     <section class="buttons row flex-md-row align-items-center justify-content-between py-2 py-lg-5 py-md-3 my-lg-5 my-md-3 my-2 container">
-        <button class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <button id="openModalDriada" class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+        <div id="myModalDriada" class="modal">
+            <div class="modal-content">
+                <span class="close">&times</span>
+                <div class="container contact-form">
+                    <form method="post">
+                        <h5 class="text-center">Рассчитать стоимость</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Ваше имя *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Введите сообщение *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+<!--                <p>Это модалочка</p>-->
+            </div>
+
+        </div>
         <button class="more my-2 col-12 col-md-5" onclick="dropToggleDriada()">узнать подробнее</button>
     </section>
     <section class="drop-down__driada container">
@@ -782,8 +913,40 @@
         </div>
 
         <div class="buttons row flex-md-row align-items-center justify-content-between py-2 py-lg-5 py-md-3 container">
-            <button class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
-            <button class="more my-2 col-12 col-md-5" onclick="dropToggleSoloElf()">узнать подробнее</button>
+            <button id="openModalSolo" class="price my-2 col-12 col-md-5 my-2">рассчитать стоимость</button>
+            <div id="myModalSolo" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times</span>
+                    <div class="container contact-form">
+                        <form method="post">
+                            <h5 class="text-center">Рассчитать стоимость</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="txtName" class="form-control" placeholder="Ваше имя *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea name="txtMsg" class="form-control" placeholder="Введите сообщение *" style="width: 100%; height: 150px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--                <p>Это модалочка</p>-->
+                </div>
+
+            </div>            <button class="more my-2 col-12 col-md-5" onclick="dropToggleSoloElf()">узнать подробнее</button>
         </div>
         <section class="drop-down__solo-elf container">
             <h2 class="title text-uppercase py-2 py-lg-5 py-md-3">СОЛО ЭЛЬФА</h2>
@@ -956,6 +1119,25 @@
         },
     });
 </script>
+<script>
 
+    let modalDriada = document.getElementById("myModalDriada");
+    let btnDriada = document.getElementById("openModalDriada");
+    let span = document.getElementsByClassName("close")[0];
+
+    btnDriada.onclick = function() {
+        modalDriada.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modalDriada.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modalDriada) {
+            modalDriada.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
