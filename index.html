@@ -352,25 +352,26 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="txtName" class="form-control" placeholder="Ваше имя *" value="" />
+                                    <input type="text" id="formName" name="txtName" class="form-control" placeholder="Ваше имя *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
+                                    <input type="email" id="formEmail" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                    <input type="phone" id="formPhone" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
                                 </div>
-                                <div class="form-group">
-                                    <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
+                                <div class="form-group text-left">
+                                    <button type="button" id="sendMail" name="btnSubmit" class="btnContact">Отправить сообщение</button>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea name="txtMsg" class="form-control" placeholder="Введите сообщение *" style="width: 100%; height: 150px;"></textarea>
+                                    <textarea name="txtMsg" id="formMessage" class="form-control" placeholder="Введите сообщение *" style="width: 100%; height: 150px;"></textarea>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <div id="errorMessage"></div>
                 </div>
                 <!--                <p>Это модалочка</p>-->
             </div>
@@ -486,7 +487,7 @@
                                     <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                    <input type="phone" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
@@ -665,7 +666,7 @@
                                     <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                    <input type="phone" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
@@ -842,7 +843,7 @@
                                     <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                    <input type="phone" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
@@ -929,7 +930,7 @@
                                         <input type="email" name="txtEmail" class="form-control" placeholder="Ваш Email *" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
+                                        <input type="phone" name="txtPhone" class="form-control" placeholder="Ваш тел. *" value="" />
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" name="btnSubmit" class="btnContact" value="Отправить сообщение" />
@@ -1119,7 +1120,7 @@
         },
     });
 </script>
-<script type="text/javascript" src="js/main.js">
-</script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/formMail.js"></script>
 </body>
 </html>
