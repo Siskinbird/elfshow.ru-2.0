@@ -23,6 +23,7 @@ $('#sendMail').on('click', () => {
     $.ajax({
         url: 'ajax/mail.php',
         type: 'POST',
+        crossDomain: true,
         cache: false,
         data: {
             'name' : name,
