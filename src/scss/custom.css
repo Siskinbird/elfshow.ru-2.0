@@ -641,4 +641,20 @@ ol {
   }
 }
 
-/*# sourceMappingURL=custom.css.map */
+.stickyWa img {
+  cursor: pointer;
+  position: fixed;
+  z-index: 22;
+  top: 10%;
+  right: 4%;
+  width: 16%;
+  transition: 0.3s ease-in-out;
+}
+.stickyWa img:hover {
+  scale: 104%;
+}
+@media (min-width: 600px) {
+  .stickyWa img {
+    width: 10%;
+  }
+}/*# sourceMappingURL=custom.css.map */
