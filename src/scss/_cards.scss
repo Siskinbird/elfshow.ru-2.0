@@ -47,16 +47,13 @@
     min-width: 32.3%;
   }
   p{
-    font-size: 1rem;
-    @include _350 {
-     // padding-top: 16px;
-      font-size: 1.25rem;
-    }
+    font-size: .77rem;
+
     @include _600 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
     @include _979 {
-      font-size: 2rem;
+      font-size: 1.75rem;
       line-height: 38px;
     }
   }

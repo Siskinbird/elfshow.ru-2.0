@@ -109,3 +109,42 @@ window.onclick = function(event) {
         modalQuiz.style.display = "none";
     }
 }
+
+
+/**DROP TOGGLE */
+    /**FUNCTION DROP DOWN*/
+
+    function dropToggleTrio() {
+        let drop = document.querySelector('.drop-down__trio');
+        if (drop.classList.contains('open-drop')) {
+            drop.classList.remove('open-drop');
+        } else {
+            drop.classList.add('open-drop');
+        }
+    }
+    
+        function dropToggleDuo() {
+            let drop = document.querySelector('.drop-down__duo');
+            if (drop.classList.contains('open-drop')) {
+                drop.classList.remove('open-drop');
+            } else {
+                drop.classList.add('open-drop');
+            }
+        }
+        
+        function dropToggleDriada() {
+            let drop = document.querySelector('.drop-down__driada');
+            if (drop.classList.contains('open-drop')) {
+                drop.classList.remove('open-drop');
+            } else {
+                drop.classList.add('open-drop');
+            }
+        }
+        function dropToggleSoloElf() {
+            let drop = document.querySelector('.drop-down__solo-elf');
+            if (drop.classList.contains('open-drop')) {
+                drop.classList.remove('open-drop');
+            } else {
+                drop.classList.add('open-drop');
+            }
+        }
