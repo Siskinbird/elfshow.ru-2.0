@@ -8,21 +8,25 @@
   margin-left: 15px;
   background-color: inherit;
   margin-right: 15px;
+
   @include _1170 {
     margin-top: 200px;
   }
   img {
-    position: absolute;
-    left: 29%;
+    width: 55%;
+
     @include _768 {
+      position: absolute;
+      top: -38%;
+      right: 28%;
       width: 38%;
+    }
+    @include _1170 {
+      top: -88%;
     }
     @include _480 {
       width: 43%;
-      display: block;
-    }
-    @include _320 {
-      display: none;
+    
     }
   }
 }
@@ -31,23 +35,17 @@
   border: 3px solid #D9D9D9;
   gap: 10px;
 }
-//.card-item {
-//  border: 1px solid #D9D9D9;
-//  min-height: 100%;
-//}
+
 .card-artist {
-  min-width: 30.3%;
-  padding-top: 36px;
+  min-width: 100%;
   height: 130px;
   border: 1px solid #D9D9D9;
-  @include _480 {
-    min-width: 31.3%;
-  }
-  @include _600 {
+
+  @include _768 {
     min-width: 32.3%;
   }
   p{
-    font-size: .77rem;
+    font-size: 1rem;
 
     @include _600 {
       font-size: 1.5rem;
@@ -61,22 +59,22 @@
 }
 
 .card-price {
-  min-width: 66.6%;
+  min-width: 100%;
+
   border: 1px solid #D9D9D9;
   height: 130px;
+  @include _768 {
+    min-width: 66.6%;
+  }
   p {
-    padding-top: 28px;
-    padding-left: 20px;
-    line-height: 48px;
     height: 100%;
     font-size: 1rem;
     @include _350 {
       font-size: 1.25rem;
-      padding-top: 36px;
+
     }
     @include _600 {
       font-size: 1.5rem;
-      padding-left: 4px;
     }
     @include _979 {
       font-size: 2rem;
