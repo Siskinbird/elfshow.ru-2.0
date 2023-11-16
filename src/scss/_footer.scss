@@ -1,0 +1,15 @@
+.footer {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  background-color: rgb(41, 41, 41, 50%);
+  a {
+    color: inherit;
+    transition: .3s ease-in-out;
+    &:hover {
+       color: blue;
+    }
+  }
+}
+.social img {
+  margin: 4px;
+}

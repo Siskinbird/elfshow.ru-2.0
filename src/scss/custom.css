@@ -296,6 +296,7 @@
 }
 
 .quiz-item {
+  font-family: "Inter", sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -304,6 +305,23 @@
 }
 .quiz-item p {
   font-size: 2rem;
+}
+
+.footer {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.5);
+}
+.footer a {
+  color: inherit;
+  transition: 0.3s ease-in-out;
+}
+.footer a:hover {
+  color: blue;
+}
+
+.social img {
+  margin: 4px;
 }
 
 body, html {
