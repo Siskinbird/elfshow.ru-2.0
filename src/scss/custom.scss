@@ -372,13 +372,13 @@ ol {
     z-index: 22;
     top: 10%;
     right: 4%;
-    width: 16%;
+    width: 10%;
     transition: .3s ease-in-out;
     &:hover {
       scale: 104%;
     }
     @include _600 {
-      width: 10%;
+      width: 7%;
     }
   }
   
