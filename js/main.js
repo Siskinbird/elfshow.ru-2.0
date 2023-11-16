@@ -91,4 +91,21 @@ window.onclick = function(event) {
         modalSolo.style.display = "none";
     }
 }
+/**QUIZ MODAL VARIABLES*/
 
+let modalQuiz = document.getElementById("myModalQuiz");
+let btnQuiz = document.getElementById("openModalQuiz");
+
+btnQuiz.onclick = function() {
+    modalQuiz.style.display = "block";
+}
+
+span[5].onclick = function() {
+    modalQuiz.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target === modalQuiz) {
+        modalQuiz.style.display = "none";
+    }
+}

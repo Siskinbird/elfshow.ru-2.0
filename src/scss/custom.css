@@ -280,6 +280,11 @@
 .modal-content h5 {
   margin-bottom: 20px;
 }
+@media (min-width: 1170px) {
+  .modal-content {
+    width: 50%;
+  }
+}
 
 .close {
   color: #aaa;
@@ -647,7 +652,7 @@ ol {
   z-index: 22;
   top: 10%;
   right: 4%;
-  width: 16%;
+  width: 6%;
   transition: 0.3s ease-in-out;
 }
 .stickyWa img:hover {

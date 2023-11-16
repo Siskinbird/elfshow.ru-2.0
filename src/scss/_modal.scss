@@ -1,3 +1,4 @@
+@import 'media';
 
 .modal {
   display: none;
@@ -20,6 +21,9 @@
   color: #292929;
   h5{
     margin-bottom: 20px;
+  }
+  @include _1170 {
+    width: 50%;
   }
 }
 
