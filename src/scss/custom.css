@@ -128,58 +128,47 @@
   gap: 10px;
 }
 
+.card-price {
+  min-width: 100%;
+  border: 1px solid #D9D9D9;
+  height: 75px;
+}
+@media (min-width: 768px) {
+  .card-price {
+    min-width: 66.6%;
+    height: 130px;
+  }
+}
+.card-price p {
+  margin: 0;
+  height: 100%;
+  font-size: 1.75rem;
+}
+@media (min-width: 979px) {
+  .card-price p {
+    font-size: 2rem;
+  }
+}
+
 .card-artist {
   min-width: 100%;
-  height: 130px;
+  height: 75px;
   border: 1px solid #D9D9D9;
 }
 @media (min-width: 768px) {
   .card-artist {
     min-width: 32.3%;
+    height: 130px;
   }
 }
 .card-artist p {
-  font-size: 1rem;
-}
-@media (min-width: 600px) {
-  .card-artist p {
-    font-size: 1.5rem;
-  }
+  margin: 0;
+  font-size: 1.5rem;
 }
 @media (min-width: 979px) {
   .card-artist p {
     font-size: 1.75rem;
     line-height: 38px;
-  }
-}
-
-.card-price {
-  min-width: 100%;
-  border: 1px solid #D9D9D9;
-  height: 130px;
-}
-@media (min-width: 768px) {
-  .card-price {
-    min-width: 66.6%;
-  }
-}
-.card-price p {
-  height: 100%;
-  font-size: 1rem;
-}
-@media (min-width: 350px) {
-  .card-price p {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 600px) {
-  .card-price p {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 979px) {
-  .card-price p {
-    font-size: 2rem;
   }
 }
 
@@ -262,13 +251,18 @@
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  padding: 20px;
+  padding: 6px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
   color: #292929;
 }
 .modal-content h5 {
   margin-bottom: 20px;
+}
+@media (min-width: 480px) {
+  .modal-content {
+    padding: 20px;
+  }
 }
 @media (min-width: 1170px) {
   .modal-content {
