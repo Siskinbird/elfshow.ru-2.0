@@ -33,11 +33,16 @@ $('#sendMail').on('click', () => {
         },
         dataType: 'html',
         beforeSend: function () {
-            $('#sendMail').prop('disabled', true);
+            $('.btnContact').prop('disabled', true);
         },
         success: function (data) {
-            alert(data);
-            $("#sendMail").prop('disabled', false)
+           if(!data){
+            alert("Были ошибки, сообщение не отправлено")
+           } else {
+            $('.sendForm').trigger('reset');
+            $(".btnContact").prop('disabled', false)
+           }
+        
         }
     })
 
