@@ -26,34 +26,66 @@
   }
 
   @include _979 {
-    font-size: 2.00rem;
-    //width: 50%;
+    font-size: 1.5rem;
   }
-  //@include _1170 {
-  //  font-size: 2.5rem;
-  //  //width: 475px;
-  //
-  //}
-
+  @include _1170 {
+    font-size: 2rem;
+  }
 }
-
-//.custom-btn {
-//  color: #fff;
-//  border-radius: 5px;
-//  padding: 10px 25px;
-//  background: transparent;
-//  cursor: pointer;
-//  transition: all 0.3s ease;
-//  position: relative;
-//  display: inline-block;
-//  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-//  7px 7px 20px 0px rgba(0,0,0,.1),
-//  4px 4px 5px 0px rgba(0,0,0,.1);
-//  outline: none;
-//}
-
 
 .buttons, .custom-btn {
 
   margin: 0 auto;
+}
+
+
+/** БАЗОВАЯ КНОПКА СПРАВА */
+.more-right, .price-right {
+  font-family: 'Inter', sans-serif;
+  background: #2c2e3e;
+  color: white;
+  min-width: 260px;
+  border-radius: 6px;
+  outline: 0 !important;
+  padding: 8px;
+  gap: 14px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  &:hover {
+    background: rgba(10, 12, 19, 0.53);
+    color: snow;
+    scale: 102%;
+  }
+  @include _350 {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  @include _768 {
+    margin-left: auto;
+    //margin-bottom: 40px;
+  }
+
+  @include _979 {
+    font-size: 1.5rem;
+  }
+  @include _1170 {
+    font-size: 2rem;
+  }
+}
+
+.custom-btn__block {
+  @include _768 {
+
+     margin-bottom: 40px; 
+  }
+
+  @include _1170 {
+    margin-bottom: 0;
+  }
+}
+
+.price-right {
+  @include _1170 {
+    margin-top: 40px;
+  }
 }

@@ -2,16 +2,24 @@
 
 .card-custom {
   position: relative;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   max-width: 100%;
   margin-left: 15px;
   background-color: inherit;
   margin-right: 15px;
-
-  @include _1170 {
-    margin-top: 200px;
+  @include _768 {
+    margin-top: 120px;
+    margin-bottom: 72px;
   }
+  @include _979 {
+        margin-top: 200px;
+    margin-bottom: 120px;
+  }
+
+  // @include _1170 {
+
+  // }
   img {
     width: 55%;
 
@@ -20,6 +28,9 @@
       top: -38%;
       right: 28%;
       width: 38%;
+    }
+    @include _995 {
+      top:-80%;
     }
     @include _1170 {
       top: -88%;
