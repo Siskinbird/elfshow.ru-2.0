@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#317EFB" />
+    <meta
+      name="description"
+      content="Профессиональные артисты украсят ваш праздник своим оригинальным выступлением в сказочных костюмах"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="yandex-verification" content="f7a22a3120414135" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Эльфийское шоу." />
+    <meta
+      property="og:description"
+      content=" Танцевальные номера для вашего праздника. С нами возможно Волшебство."
+    />
+    <meta property="og:url" content="https://elfshow.ru/" />
+    <meta
+      property="og:image"
+      content="https://elfshow.ru/assets/img/link.jpg"
+    />
+    <meta property="og:site_name" content="Elfshow" />
+    <meta property="og:locale" content="ru_Ru" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--    SWIPER SLIDER CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--    Bootstrap & jQuery-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--    main CSS-->
+    <link rel="stylesheet" href="src/scss/custom.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(95181142, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/95181142" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <title>ElfShow</title>
+
+  </head>
+<body>
+    <section class="quest">
+        <div class="quest-wrapper mx-auto d-flex flex-column container p-4">
+            <h6 class='text-center'>На какое количество человек ваше мероприятие?</h6> 
+            <form id="quest-form">
+                <input type="radio" name="option" value="До 50" id="option1" onclick="disableTextarea()">
+                <label for="option1">До 50</label><br>
+                
+                <input type="radio" name="option" value="от 100" id="option2" onclick="disableTextarea()">
+                <label for="option2">От 100</label><br>
+                
+                <input type="radio" name="option" value="более 500" id="option3" onclick="disableTextarea()">
+                <label for="option3">Более 500</label><br>
+
+                <input type="radio" name="option" value="Свой вариант" id="option4">
+                <label for="option4">Другой вариант</label><br>
+                
+                <textarea class="w-100" id="message" name="message" rows="4" disabled></textarea><br>
+                
+                <button id="test-btn" onclick="saveValue()">Далее</button>
+              </form>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/quiz.js"></script>
