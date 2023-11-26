@@ -44,7 +44,7 @@ const quizData = [
     {
       number: 3,
       title: "В какое время суток планируется событие",
-      answer_alias: "ewening",
+      answer_alias: "evening",
       answers: [
         {
           answer_title: "Световой день",
@@ -136,15 +136,15 @@ const quizData = [
         },
       ],
     },
-    {
-        number: 7,
-        title: "Какой бюджет?",
-        answer_alias: "tel",
+{
+        number: 8,
+        title: "Контактный номер телефона",
+        answer_alias: "phone",
         answers: [
           {
-            answer_title: "Введите номер телефона",
-            type: "text",
+            answer_title: "Введите номер",
+            type: "tel",
           },
         ],
-      },
+      },     
   ];
