@@ -106,8 +106,8 @@ class Quiz {
 					(el.checked) ? isValid = true : el.classList.add('error');
 				case 'radio':
 					(el.checked) ? isValid = true : el.classList.add('error');
-        case 'tel':
-					(el.value) ? isValid = true : el.classList.add('error');
+				case 'tel':
+					(el.checked) ? isValid = true : el.classList.add('error');
 			}
 		});
 
