@@ -438,13 +438,15 @@ body {
   font-family: "Inter", sans-serif;
   height: 100%;
   background-color: rgba(41, 41, 41, 0.5);
+  text-decoration: none;
 }
 .footer a {
   color: inherit;
   transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 .footer a:hover {
-  color: blue;
+  color: #e86eff;
 }
 
 .social img {
@@ -818,4 +820,6 @@ ol {
 
 .crutch {
   margin-left: -20px;
-}/*# sourceMappingURL=custom.css.map */
+}
+
+/*# sourceMappingURL=custom.css.map */
