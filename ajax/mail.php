@@ -19,4 +19,3 @@
 
    $success = mail('show.elfproject@gmail.com', $subject, $message, $headers);
    echo $success;
-?>
