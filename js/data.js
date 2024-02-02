@@ -142,7 +142,7 @@ const quizData = [
         answer_alias: "phone",
         answers: [
           {
-            answer_title: "Введите номер",
+            answer_title: "",
             type: "tel",
           },
         ],

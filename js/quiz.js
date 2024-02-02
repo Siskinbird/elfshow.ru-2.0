@@ -102,12 +102,16 @@ class Quiz {
 			switch(el.type) {
 				case 'text':
 					(el.value) ? isValid = true : el.classList.add('error');
+					break;
 				case 'checkbox':
 					(el.checked) ? isValid = true : el.classList.add('error');
+					break;
 				case 'radio':
 					(el.checked) ? isValid = true : el.classList.add('error');
+					break;
 				case 'tel':
-					(el.checked) ? isValid = true : el.classList.add('error');
+					(el !== '') ? isValid = true : el.classList.add('error');
+					break;
 			}
 		});
 
